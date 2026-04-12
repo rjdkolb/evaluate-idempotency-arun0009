@@ -80,7 +80,7 @@ Tests use Testcontainers to spin up PostgreSQL and verify:
 
 ## Other Spring Boot Idempotency Tools
 
-This test harness uses **arun0009/idempotent**, but several other libraries exist for adding idempotency to Spring Boot applications. The [`../docs`](../docs) directory contains the full research behind this choice:
+This test harness uses **arun0009/idempotent**, but several other libraries exist for adding idempotency to Spring Boot applications. 
 
 | Document                                                | Summary |
 |---------------------------------------------------------|---------|
