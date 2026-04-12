@@ -5,7 +5,7 @@
 A Spring Boot app demonstrating the [idempotent-rds](https://github.com/arun0009/idempotent) library
 for making REST endpoints idempotent using PostgreSQL.
 
-## How Idempotency Works
+## How Idempotency Works in the example:
 
 1. The client sends an `Idempotency-Key` header with a unique value (e.g. a UUID) on the `POST /api/orders` request.
 2. The **first** request with that key executes normally — the order is created and the response is cached in the `idempotent` table.
