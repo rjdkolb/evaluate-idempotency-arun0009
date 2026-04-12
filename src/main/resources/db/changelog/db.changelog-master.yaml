@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/001-create-order-tables.yaml
+  - include:
+      file: db/changelog/002-create-idempotent-table.yaml
+

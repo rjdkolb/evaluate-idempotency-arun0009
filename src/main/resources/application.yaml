@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: idempotency-test-harness
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+
+idempotent:
+  key:
+    header: Idempotency-Key
+  rds:
+    table-name: idempotent
+    cleanup:
+      fixed-delay: 60000
+      batch-size: 1000
